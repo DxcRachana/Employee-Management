@@ -1,0 +1,116 @@
+body{
+    background-color:rgb(200, 228, 255);
+}
+#dtable {
+    width: 50rem;
+    margin: 4rem auto;
+    border-radius: 30rem;
+  }
+  
+  .th-sm{
+    background-color: rgb(14, 67, 167);
+    height: 5rem;
+  }
+  #dtable tr:nth-child(odd) {
+    background-color: rgb(80, 93, 179);
+    text-align: center;
+    height: 3rem;
+  }
+  
+  #dtable tr:nth-child(even) {
+    background-color: rgb(129, 158, 224);
+    text-align: center;
+    height: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: rgb(246, 246, 246);
+    color: black;
+  }
+  
+  .previous {
+    
+    background-color: black;
+    color: white;
+  }
+  
+  .next {
+    background-color: #3242a6;
+    color: white;
+  }
+  #div1{
+    padding-top: 0.8cm;
+    padding-left: 16.3cm;
+  }
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+}
+
+
+#text{
+	text-align: center;
+	margin:25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5cm;
+	padding: 20px;
+    
+    
+    
+}
+
+.row{
+	margin-top: 5.5rem;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.container {
+	position: absolute;
+	margin-top: 16px;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#btnAdd{
+	margin-top: 10px;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	margin-right: 2px;
+	padding: 0.755em;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px;
+	border-radius: 10px !important;
+	color: white !important;
+	background-color:  #3242a6;
+}
+#btnAdd:hover{
+	border: 1px solid #979797;
+  	background: none !important;
+  	border-radius: 10px !important;
+   	background-color: #000 !important;
+   	color: #fff !important;
+}
+form {
+	margin-right: 40px;
+	padding: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.7);
+	border: 2px;
+	border-color: #000;
+	padding-left: 30px;
+	padding-right: 40px;
+	margin-bottom: 40px;
+	background-color: rgb(129, 158, 224);
+}

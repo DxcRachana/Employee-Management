@@ -1,0 +1,67 @@
+
+body{
+    background-color: rgba(73, 133, 138, 0.495);
+}
+.container{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 15px 15px 20px black;
+    align-self: center;
+    background-color: rgb(244, 239, 244);
+}
+
+#form h2{
+    font-size: 1.5cm;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+#email,#password,#fname,#lname{
+    padding: 15px;
+    width: 60%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Right Side */
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(65, 94, 127);
+}
+.side img{
+    width: 400px;
+    height: 500px;
+}
+p{
+    padding: 12px 30px;
+    width: 3cm;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+p:hover{
+    cursor: pointer;
+    background-color: rgb(92, 16, 35);
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Comatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table</title>
+  <link rel="stylesheet" href="/css/table.css">
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  
+</head>
+
+<body>
+	<h1 id="text">Employee Details</h1>
+	<div class="container" style="display: flex; height:100px;" >
+		<div class="row" style="width: 25%;">
+			<div class="col-sm-4">
+				<form id="formUser" name="formUser">
+					<br>
+					<div class="form-group" align="left">
+						<label>First Name: </label>
+                		<input type="text" name="firstName" id="fname" placeholder="Enter First Name" required />
+					</div>
+					<br>
+					<div class="form-group" align="left">
+						<label>Last Name: </label>
+                		<input type="text" name="lastName" id="lname" placeholder="Enter Last Name" required />
+					</div>	
+					<br>
+					<div class="form-group" align="left">
+						<label>Email : </label>
+                		<input type="email" name="email" id="email" placeholder="Enter Email" required />
+					</div>	
+					<br>
+					<div class="form-group" align="left">
+						<label>Password : </label>
+                		<input type="password" name="password" id="password" placeholder="Enter Password" required />
+					</div>
+					<br>
+					<div class="form-group" align="left">
+						<button type="submit" id="btnAdd">Add User</button>
+					</div>
+				</form>
+			</div>
+		</div>
+ <!--<div id="text">Employee Details</div>-->
+<div id="dtable">
+  <table id="dt" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">First Name
+  
+        </th>
+        <th class="th-sm">Last Name
+
+        </th>
+        <th class="th-sm">Email Id
+  
+        </th>
+        <th class="th-sm">Password
+  
+        </th>
+       	<th class="th-sm">Action
+			   
+		   </th>
+      </tr>
+    </thead>
+
+  
+</table>
+
+<div id="div1">
+<a href="#" id="previous" class="previous">&laquo; Previous</a>
+<a href="#" id="next" class="next"> Next &raquo;</a>
+
+
+<!--<button id="previous">&laquo; Previous</button>
+<button id="next">Next &raquo;</button>-->
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/js/details.js">  
+	  
+	 
+    </script> 
+
+</body>
+ 
+</html>
