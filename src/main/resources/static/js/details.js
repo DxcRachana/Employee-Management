@@ -1,13 +1,13 @@
 $(document).ready(function() {
-	var count=1;
+	
+	
 	
   var table = $('#dt').DataTable({
-
-	"bInfo" : false,
-	"bPaginate": false,
-    
+	
+     
+	lengthMenu : [[2,3,4,-1],['2', '3' , '4' , 'All']],
     ajax: {
-      url: 'http://localhost:8080/api/mydata/1?limit=2',
+      url: 'http://localhost:8080/api/users',
       type: 'GET',
       dataSrc  :"",
     },
@@ -21,44 +21,16 @@ $(document).ready(function() {
 		  }
 		  }
     ],
-    
+    dom: 'Bfrtip',
+    	buttons: [{
+      		extend: 'excel',
+      		title: 'Employee Details Excel Sheet',
+      		filename: 'Data'
+    	}] 
+   
   });
-  
-	/*for(var i =0;i<data.length;i++) {                
-	console.log(data[i]);                
-	indexVal = data[i];            
-	}*/
-	
-	$('#next').click(function() {
-		var data = table.data();
-    	console.log(data);
-		 $.ajax({
-        	url: "http://localhost:8080/api/mydata/" + data.id,
-        	type: 'GET',
-        	success: function() {
-        		
-     	
-        table.ajax.url( 'http://localhost:8080/api/mydata/'+data.id+'?limit=2' ).load();
-		  data=data+2;
-		  }
-	});
-	
-	});
-
-  	$('#previous').click(function() {
-	  
-	  	
-	  	
-	  	var id = $(this).attr('id');
-
-	  	console.log("previous button click"+id);
-        table.ajax.url( 'http://localhost:8080/api/mydata/'+id+'?limit=2' ).load();
-        
-              
-  	});  
-
-
-
+  		
+  	
 
 	//Get data from user, put it into database and load the datatable
 	$('#formUser').submit(function(e){
@@ -92,15 +64,31 @@ $(document).ready(function() {
         	}
 		});   
 	});
-  
+	
+
+	
+	// Export the data
+	$('#download').click(function() {
+	    $.ajax({
+	        url: 'http://localhost:8080/api/export',
+	        method: 'GET',
+	        success: function(response) {
+	            // Use the FileSaver.js library to download the file
+	         
+	            var binaryData = [];
+					binaryData.push(response);
+	                var downloadLink = document.createElement('a');
+	                downloadLink.href = URL.createObjectURL(new Blob(binaryData));
+	                downloadLink.download = 'datatable.txt';
+	                downloadLink.click();
+	        },
+	        error: function(error) {
+	            console.log(error);
+	        }
+	    });
+	});
+ 
 });
-	
-	
-	  
-	  
-	  
-	  
-	  
 	  
 	  
 	  

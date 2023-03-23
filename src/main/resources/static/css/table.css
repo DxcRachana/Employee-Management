@@ -38,24 +38,32 @@ body{
     
     background-color: black;
     color: white;
+    border-radius: 3px !important;
   }
   
   .next {
     background-color: #3242a6;
     color: white;
+    border-radius: 3px !important;
   }
   #div1{
     padding-top: 0.8cm;
     padding-left: 16.3cm;
   }
-.dataTables_wrapper .dataTables_filter {
-    float: right;
-    text-align: right;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-}
-
+  #download{
+	background-color: rgb(196, 98, 0);
+    color: white;
+    padding-top: 0.3cm;
+    margin-top:50px;
+    margin-left:10cm;
+    float:right;
+    border-radius: 3px !important;
+  }
+  #download:hover {
+    background-color: rgb(246, 246, 246);
+    color: black;
+  }
+ 
 
 #text{
 	text-align: center;
@@ -113,4 +121,59 @@ form {
 	padding-right: 40px;
 	margin-bottom: 40px;
 	background-color: rgb(129, 158, 224);
+}
+
+.dataTables_wrapper .dataTables_filter {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_length {
+	float: left;
+	text-align: left;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+.dataTables_wrapper .dataTables_info {
+	clear: both;
+	float: left;
+	padding: 0.715em;
+	margin-top: 10px;
+
+}
+.dataTables_wrapper .dataTables_paginate  {
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+	padding: 0.725em;
+	margin-right: 2px;
+
+
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	box-sizing: border-box;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	margin-right: 2px;
+	padding: 0.755em;
+	text-align: center;       
+	
+}
+
+.dt-button {
+	
+	border-radius: 3px !important;
+	background: rgb(196, 98, 0) !important;
+	color:#fff !important;
+	
+}
+.dt-button:hover{
+	
+	border-radius: 3px !important;
+   	background-color: #000 !important;
+   	color: #fff !important;
 }
